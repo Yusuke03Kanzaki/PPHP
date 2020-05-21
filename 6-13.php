@@ -1,7 +1,7 @@
 <?php
 echo '要素数？：';
 $n = trim(fgets(STDIN));
-$a =array_fill(0, $n, 0);
+$a = array_fill(0, $n, 0);
 
 for ($i = 0; $i < $n; $i++) { 
     echo '$a[', $i, '] = ';
