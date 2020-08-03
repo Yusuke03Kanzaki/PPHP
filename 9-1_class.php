@@ -37,5 +37,5 @@ class Coordinate {
 // $y = trim(fgets(STDIN));
 
 // $Cooordinate_p = new Coordinate($x, $y) {
-    
+    a
 // }
