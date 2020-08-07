@@ -26,7 +26,7 @@ $y = trim(fgets(STDIN));
 $q = new CoordinateTester2($x, $y);
 // var_dump($p->getX(), $p->getY());
 
-$p->set($a, $b);
+// $p->set($a, $b);
 var_dump($p->getX(), $p->getY()); //上書きされている?
 var_dump($q->getX(), $q->getY());
 
