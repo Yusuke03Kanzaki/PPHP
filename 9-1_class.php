@@ -4,8 +4,10 @@ class Coordinate {
     static private $y;
 
     function __construct($x, $y) {
-        $this->x = $x;
-        $this->y = $y;
+        // var_dump($x, $y);
+        self::$x = $x;
+        self::$y = $y;
+        // var_dump(self::getX(), self::getY());
     }
 
     static function getX() {
@@ -17,24 +19,26 @@ class Coordinate {
     }
 
     function setX($x) {
-        $this->x = $x;
+        self::$x = $x;
     }
 
     function setY($y) {
-        $this->y = $y;
+        self::$y = $y;
     }
 
     function set($x, $y) {
-        $this->x = $x;
-        $this->y = $y;
+        self::$x = $x;
+        self::$y = $y;
     }
 }
 
-// echo '座標pを入力せよ。';
+// echo '座標pを入力せよ。'. PHP_EOL;
 // echo 'X座標：';
 // $x = trim(fgets(STDIN));
 // echo 'Y座標：';
 // $y = trim(fgets(STDIN));
 
-// $Cooordinate_p = new Coordinate($x, $y) {
-// }
+// $p = new Coordinate($x, $y);
+// $p->setX(1);
+// var_dump($p->getX());
+// // }
